@@ -9,7 +9,7 @@ public class Voiture implements Runnable {
 
     @Override
     public void run(){ 
-        Util.log("Voiture " + nom + " a démarré.");
+        Util.log(nom + " a démarré.");
 
         while(true) {
             try {
