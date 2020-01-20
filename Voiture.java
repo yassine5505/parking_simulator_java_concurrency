@@ -43,7 +43,7 @@ public class Voiture implements Runnable {
 
     public void entrer() {	
 		try {
-            while (!(this.park.accept(this))){
+            while (!this.park.accept(this)){
                 // Si pas autorisée à entrer
                 // interrompue pour une durée aléatoire
                 Thread.sleep(tempsAleatoire());
